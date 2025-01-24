@@ -23,7 +23,7 @@ CORS(app, resources={r"/*": {"origins": "*"}}, supports_credentials=True)
 bcrypt = Bcrypt(app)
 
 # Set JWT_SECRET_KEY in Flask config
-app.config['JWT_SECRET_KEY'] = os.getenv("JWT_SECRET_KEY")  # Ensure this is set
+app.config['JWT_SECRET_KEY'] = "5620c966fe4cc44c85e8904834a2019f51c5816cd7343e48"  # Ensure this is set
 
 jwt = JWTManager(app)
 
